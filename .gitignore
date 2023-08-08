@@ -3,6 +3,6 @@
 .RData
 .Ruserdata
 .DS_Store
-.data
-.data/NSDUH_2021_Tab.txt
+data
+data/NSDUH_2021_Tab.txt
 
