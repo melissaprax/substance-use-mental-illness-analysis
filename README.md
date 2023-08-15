@@ -1,21 +1,42 @@
-# Machine Learning Project Proposal: Marijuana and Mental Health
+# Machine Learning Model Project: Substance Use and Mental Health
 
-For our final project, we are interested in exploring the marijuana users' health outcomes. The question or "problem" we are trying to answer through our model is if marijuana usage predicts a set of negative mental health indicators/outcomes or not.
+For our final project, we are interested in people's health outcomes after substance use. The question or "problem" we are trying to answer through our model is if substance usage predicts a set of negative mental health indicators/outcomes for people or not.
 
-We will do this by using data from the Substance Abuse and Mental Health Services Administration survey published in March 2023 (data from 2019 survey):
-https://www.datafiles.samhsa.gov/sites/default/files/field-uploads-protected/studies/NSDUH-2021/NSDUH-2021-datasets/NSDUH-2021-DS0001/NSDUH-2021-DS0001-info/NSDUH-2021-DS0001-info-codebook.pdf
+## The Data
 
-How many rows of data?
-2,988 variables (columns)
-58,034 rows
+Our main data source is from the Substance Abuse and Mental Health Services Administration [survey published](https://www.datafiles.samhsa.gov/sites/default/files/field-uploads-protected/studies/NSDUH-2021/NSDUH-2021-datasets/NSDUH-2021-DS0001/NSDUH-2021-DS0001-info/NSDUH-2021-DS0001-info-codebook.pdf) in March 2023 (data from a 2019 survey).
 
-Size of data?
-File 442 MB
+With 58,034 rows and 2,988 variables to pull from, we thought this would be ample of enough data to model.
+
+## Preliminary Data Analysis
+
+Exploratory data analysis (EDA) was the first step in our project. Our interest was particularly in marijuana-related variables, given the recent discourse around [cannabis use disorder](https://www.washingtonpost.com/health/2023/07/31/marijuana-addiction-legal-recreational-sales/).
+
+So first, we pulled a handful of indicators relating to marijuana and mental health indicators that were focused on respondent's experiences in the past year. We focused binary indicators during our initial EDA, preprocessing the data for an initial model.
+
+## Initial Model
 
 
-What each person do?
-Data analysis and examination of columns
 
+Using random forest (fresh_look.ipynb)
+
+MJEVER, which is the indicator for if respondents have used marijuana previously, was showed as the most important feature.
+
+Our target?
+
+We were able to get a 64???% accuracy in running the model.
+
+What we don't know is if our model predicts better or worse mental health outcomes for users of marijuana.
+
+## Pycaret
+
+## Expanding the Data Variables
+
+After looking through the code book more thoroughly and having a better understanding the of methodology, we created a data frame that fully encompassed
+
+## Advancing the model
+
+Adding a handful of more variables to expand our model to consider more substances and predictors of health.
 
 ## Indicators
 
